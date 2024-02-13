@@ -107,13 +107,14 @@ func saveResult(tokenMatrix matrix, reward int, optimalPath path, lastIdx int, r
 	}
 
 	defer file.Close()
-	if reward != 0 {
-		_, err = file.WriteString(fmt.Sprintf("%d\n", reward))
-		if err != nil {
-			fmt.Println("Error:", err)
-		}
+	
+	_, err = file.WriteString(fmt.Sprintf("%d", reward))
+	if err != nil {
+		fmt.Println("Error:", err)
+	}
 
-		var tempString string
+	if reward != 0 {
+		var tempString string = "\n"
 		for i := 0; i <= lastIdx; i++ {
 			tempString += tokenMatrix.Buffer[optimalPath.Coordinates[i].Row][optimalPath.Coordinates[i].Column]
 			if i != lastIdx {
