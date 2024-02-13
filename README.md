@@ -67,7 +67,6 @@ Direktori tugas ini memiliki struktur berikut:
 │   ├── main
 │   └── main.exe
 ├── doc
-│   ├── Tucil1_K2_13522080_Julian Chandra Sutadi.docx
 │   └── Tucil1_K2_13522080_Julian Chandra Sutadi.pdf
 ├── go.mod
 ├── run.sh
