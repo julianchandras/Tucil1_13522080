@@ -1,54 +1,61 @@
 # Tugas Kecil 1 IF2211 Strategi Algoritma
-> Julian Chandra Sutadi (13522080)
 
 ## Daftar Konten
 * [Informasi Umum](#informasi-umum)
 * [Deskripsi Singkat](#deskripsi-singkat)
+* [Kebutuhan Program](#kebutuhan-program)
 * [Setup dan Penggunaan](#setup-dan-penggunaan)
 * [Struktur File](#struktur-file)
+* [Identitas](#identitas)
 
 ## Informasi Umum
 Repository ini berisi program penyelesaian Cyberpunk 2077 Breach Protocol dengan Algoritma Brute Force.
 
 ## Deskripsi Singkat
-Pemain menyediakan matriks berisi dua karakter alfanumerik dan beberapa sekuens beserta reward dari masing-masing sekuens. Program akan mencari solusi terbaik (reward maksimal) dari matriks dimulai dari salah satu kolom pada baris pertama, lalu bergerak vertikal dan horizontal secara bergantian dengan algoritma brute force.<br>Program dibuat dalam bahasa pemrograman Go.<br><br>Contoh terdapat pada laman https://cyberpunk-hacker.com/.
+Pemain menyediakan matriks berisi dua karakter alfanumerik dan beberapa sekuens beserta reward dari masing-masing sekuens. Program akan mencari solusi terbaik (reward maksimal) dari matriks dimulai dari salah satu kolom pada baris pertama, lalu bergerak vertikal dan horizontal secara bergantian dengan algoritma brute force.<br><br>Contoh terdapat pada laman https://cyberpunk-hacker.com/.
 
+## Kebutuhan Program
+Program dibuat dengan bahasa pemrograman Go. Untuk menjalankan program ini, pastikan bahwa Go sudah terinstall. Gunakan perintah di bawah ini untuk mengecek versi Go yang terinstall
+```
+$ go version
+```
+Jika belum terinstall, download dan ikuti petunjuk pada laman [ini](https://go.dev/doc/install)
 ## Setup dan Penggunaan
 1. Clone repository ini dengan perintah
 ```
-git clone https://github.com/julianchandras/Tucil1_13522080.git
+$ git clone https://github.com/julianchandras/Tucil1_13522080.git
 ```
 2. Jika ingin mengkompilasi program jalankan perintah
 ```
-go build -o bin/main src/main.go src/functions.go src/txtprocessor.go src/type.go
+$ go build -o bin/main src/main.go src/functions.go src/txtprocessor.go src/type.go
 ```
 3. Pada Windows, jalankan program dengan perintah:
 ```
-.\bin\main.exe
+$ .\bin\main.exe
 ```
 Sedangkan pada Linux, jalankan program dengan perintah:
 ```
-bin/main
+$ bin/main
 ```
-Untuk Linux, juga langsung dapat menjalankan (tanpa perlu compile terlebih dahulu)
+Untuk Linux, juga langsung dapat menjalankan perintah (tanpa perlu compile terlebih dahulu)
 ```
-./run.sh
+$ ./run.sh
 ```
 4. Ikuti arahan program dan berikan input.
 5. Jika ingin menginput dari file, gunakan format berikut pada file txt dan tempatkan pada folder test.
 
 ```
-buffer_size<br>
-matrix_width matrix_height<br>
-matrix<br>
-number_of_sequences<br>
-sequences_1<br>
-sequences_1_reward<br>
-sequences_2<br>
-sequences_2_reward<br>
-…<br>
-sequences_n<br>
-sequences_n_reward<br>
+buffer_size
+matrix_width matrix_height
+matrix
+number_of_sequences
+sequences_1
+sequences_1_reward
+sequences_2
+sequences_2_reward
+…
+sequences_n
+sequences_n_reward
 ```
 
 ## Struktur File
@@ -83,3 +90,5 @@ Direktori tugas ini memiliki struktur berikut:
     ├── 6-result.txt
     └── 6.txt
 ```
+## Identitas
+Program ini dibuat oleh Julian Chandra Sutadi (13522080)
