@@ -53,7 +53,7 @@ sequences_n_reward<br>
 
 ## Struktur File
 Direktori tugas ini memiliki struktur berikut:
-
+```
 .
 ├── README.md
 ├── bin
@@ -82,3 +82,4 @@ Direktori tugas ini memiliki struktur berikut:
     ├── 5.txt
     ├── 6-result.txt
     └── 6.txt
+```
