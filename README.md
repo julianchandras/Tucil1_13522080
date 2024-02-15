@@ -21,11 +21,11 @@ $ go version
 ```
 Jika belum terinstall, download dan ikuti petunjuk pada laman [ini](https://go.dev/doc/install)
 ## Setup dan Penggunaan
-1. Clone repository ini dengan perintah
+### 1. Clone repository ini dengan perintah:
 ```
 $ git clone https://github.com/julianchandras/Tucil1_13522080.git
 ```
-2. Kompilasi program
+### 2. Kompilasi program
 Untuk Windows, kompilasi program dengan perintah:
 ```
 $ go build -o bin/main.exe src/main.go src/functions.go src/txtprocessor.go src/type.go
@@ -34,7 +34,7 @@ Sedangkan pada Linux, kompilasi program dengan perintah:
 ```
 $ go build -o bin/main src/main.go src/functions.go src/txtprocessor.go src/type.go
 ```
-3. Jalankan program
+### 3. Jalankan program<br>
 Untuk Windows, jalankan program dengan perintah:
 ```
 $ .\bin\main.exe
@@ -43,12 +43,12 @@ Sedangkan pada Linux, jalankan program dengan perintah:
 ```
 $ bin/main
 ```
-Untuk Linux, juga langsung dapat menjalankan perintah (tanpa perlu kompilasi program terlebih dahulu)
+Pada Linux, juga langsung dapat jalankan perintah (tanpa perlu kompilasi program terlebih dahulu)
 ```
 $ ./run.sh
 ```
-4. Ikuti arahan program dan berikan input.
-5. Jika ingin menginput dari file, gunakan format berikut pada file txt dan tempatkan pada folder test.
+### 4. Ikuti arahan program dan berikan input.
+### 5. Jika ingin menginput dari file, gunakan format berikut pada file txt dan tempatkan pada folder test.
 
 ```
 buffer_size
