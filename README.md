@@ -25,11 +25,17 @@ Jika belum terinstall, download dan ikuti petunjuk pada laman [ini](https://go.d
 ```
 $ git clone https://github.com/julianchandras/Tucil1_13522080.git
 ```
-2. Jika ingin mengkompilasi program jalankan perintah
+2. Kompilasi program
+Untuk Windows, kompilasi program dengan perintah:
+```
+$ go build -o bin/main.exe src/main.go src/functions.go src/txtprocessor.go src/type.go
+```
+Sedangkan pada Linux, kompilasi program dengan perintah:
 ```
 $ go build -o bin/main src/main.go src/functions.go src/txtprocessor.go src/type.go
 ```
-3. Pada Windows, jalankan program dengan perintah:
+3. Jalankan program
+Untuk Windows, jalankan program dengan perintah:
 ```
 $ .\bin\main.exe
 ```
@@ -37,7 +43,7 @@ Sedangkan pada Linux, jalankan program dengan perintah:
 ```
 $ bin/main
 ```
-Untuk Linux, juga langsung dapat menjalankan perintah (tanpa perlu compile terlebih dahulu)
+Untuk Linux, juga langsung dapat menjalankan perintah (tanpa perlu kompilasi program terlebih dahulu)
 ```
 $ ./run.sh
 ```
